@@ -1,0 +1,12 @@
+@import "vars";
+
+// IE7 support
+$unsemantic-ie7-support: false;
+
+// Unsemantic grids import
+@import "../grid/unsemantic-grid-responsive.scss";
+@import "../grid/unsemantic-grid-responsive-tablet.scss";
+
+//**************************************+//
+//  SPLIT SCSS FILES IMPORTS             //
+//***************************************//
