@@ -29,7 +29,7 @@ gulp
 
 ### Production
 
-There is another gulp task who's made for optimize anything 
+There is another gulp task which is made to create a /prod folder with all the files optimized and ready to be deployed with a FTP client
 
 ```
 gulp prod
