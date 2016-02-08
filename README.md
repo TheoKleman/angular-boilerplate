@@ -2,13 +2,18 @@
 
 ### How to install
 
-To install the project, just clone it, then run 
+To install the project, just clone it in a new folder 
+```
+cd www
+mkdir angular-starter
+git clone https://github.com/TheoKleman/angular-starter.git
+```
 
+Run npm install
 ```
 npm install
 ```
 Then start the gulp default task  
-
 ```
 gulp
 ```
