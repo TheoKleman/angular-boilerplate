@@ -1,6 +1,6 @@
 # Another Angular Starter
 
-This repo is an Angular starter including ["Unsemantic"](http://unsemantic.com/) and working with Gulp
+This repo is an Angular starter including [unsemantic](http://unsemantic.com/) CSS framework and working with Gulp
 
 ### How to install
 
