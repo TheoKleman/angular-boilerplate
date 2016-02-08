@@ -1,5 +1,7 @@
 # Another Angular Starter
 
+This repo is an Angular starter including ["Unsemantic"](http://unsemantic.com/) and working with Gulp
+
 ### How to install
 
 To install the project, just clone it in a new folder 
@@ -12,6 +14,14 @@ Run npm install
 ```
 npm install
 ```
+
+You have to generate the JS and CSS files before starting to work 
+```
+gulp js_libs
+gulp js_app
+gulp_sass
+```
+
 Then start the gulp default task  
 ```
 gulp
