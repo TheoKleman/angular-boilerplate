@@ -5,7 +5,6 @@
 To install the project, just clone it in a new folder 
 ```
 cd www
-mkdir angular-starter
 git clone https://github.com/TheoKleman/angular-starter.git
 ```
 
