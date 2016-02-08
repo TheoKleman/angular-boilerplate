@@ -14,13 +14,13 @@ gulp.task('default', function(){
 });
 
 gulp.task('js_libs', function(){
-    return gulp.src('assets/js/libs/*.js')
+    return gulp.src(['assets/js/libs/jquery.js', 'assets/js/libs/angular.min.js', 'assets/js/libs/angular-route.min.js'])
         .pipe(concat('vendors.js'))
         .pipe(gulp.dest('assets/js/dist'))
 });
 
 gulp.task('js_app', function(){
-    return gulp.src('assets/js/app/*.js')
+    return gulp.src(['assets/js/app/config.js', 'assets/js/app/services/*.js', 'assets/js/app/controllers/*.js'])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('assets/js/dist'))
 });
