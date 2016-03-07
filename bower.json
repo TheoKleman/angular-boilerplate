@@ -1,0 +1,22 @@
+{
+  "name": "Angular starter",
+  "description": "A starter wortking with Angular and Gulp",
+  "main": "gulpfile.js",
+  "authors": [
+    "Théo Kleman <theo@kleman.fr>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/TheoKleman/angular-starter",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js/libs"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.0",
+    "angular": "^1.5.0",
+    "jquery": "^2.2.0"
+  }
+}

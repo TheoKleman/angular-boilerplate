@@ -14,7 +14,12 @@ gulp.task('default', function(){
 });
 
 gulp.task('js_libs', function(){
-    return gulp.src(['assets/js/libs/jquery.js', 'assets/js/libs/angular.min.js', 'assets/js/libs/angular-route.min.js'])
+    return gulp
+        .src([
+            'assets/js/libs/jquery/dist/jquery.js',
+            'assets/js/libs/angular/angular.js',
+            'assets/js/libs/angular-route/angular-route.js',
+        ])
         .pipe(concat('vendors.js'))
         .pipe(gulp.dest('assets/js/dist'))
 });
