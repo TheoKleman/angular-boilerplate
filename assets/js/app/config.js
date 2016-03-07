@@ -11,8 +11,14 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider
         // home page
         .when('/', {
-            templateUrl: 'views/home.php',
+            templateUrl: 'views/home.html',
             controller: 'homeCtrl'
+        })
+
+        // About page
+        .when('/about', {
+            templateUrl: 'views/about.html',
+            controller: 'aboutCtrl'
         })
 
         .otherwise({'redirectTo':'/'});
