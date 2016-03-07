@@ -15,6 +15,11 @@ Run npm install
 npm install
 ```
 
+Run bower install
+```
+bower install
+```
+
 You have to generate the JS and CSS files before starting to work 
 ```
 gulp js_libs

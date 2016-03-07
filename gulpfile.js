@@ -67,7 +67,12 @@ gulp.task('sass_prod',function(){
 });
 
 gulp.task('js_libs_prod', function(){
-    return gulp.src('assets/js/libs/*.js')
+    return gulp
+        .src([
+            'assets/js/libs/jquery/dist/jquery.js',
+            'assets/js/libs/angular/angular.js',
+            'assets/js/libs/angular-route/angular-route.js',
+        ])
         .pipe(concat('vendors.js'))
         .pipe(uglify())
         .pipe(gulp.dest('prod/assets/js/dist'))
