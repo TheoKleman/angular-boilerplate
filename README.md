@@ -20,13 +20,6 @@ Run bower install
 bower install
 ```
 
-You have to generate the JS and CSS files before starting to work 
-```
-gulp js_libs
-gulp js_app
-gulp_sass
-```
-
 Then start the gulp default task  
 ```
 gulp

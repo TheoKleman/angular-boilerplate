@@ -7,9 +7,8 @@ var watch = require('gulp-watch');
 var newer = require('gulp-newer');
 var imagemin = require('gulp-imagemin');
 
-gulp.task('default', function(){
-    gulp.watch('assets/js/libs/**/*.js', ['js_libs']);
-    gulp.watch('assets/js/app/**/*.js', ['js_app']);
+gulp.task('default', ['js_libs', 'js_app', 'sass'], function(){
+    gulp.watch('assets/js/**/*.js', ['js_libs', 'js_app']);
     gulp.watch('assets/sass/**/*.scss', ['sass']);
 });
 
