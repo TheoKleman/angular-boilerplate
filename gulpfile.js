@@ -78,6 +78,7 @@ gulp.task('js_libs_prod', function(){
             'assets/js/libs/angular-route/angular-route.js',
         ])
         .pipe(concat('vendors.js'))
+        .pipe(ngannotate())
         .pipe(uglify())
         .pipe(gulp.dest('prod/assets/js/dist'))
 });
@@ -85,6 +86,8 @@ gulp.task('js_libs_prod', function(){
 gulp.task('js_app_prod', function(){
     return gulp.src('assets/js/app/*.js')
         .pipe(concat('app.js'))
+        .pipe(ngannotate())
+        .pipe(uglify())
         .pipe(gulp.dest('prod/assets/js/dist'))
 });
 
