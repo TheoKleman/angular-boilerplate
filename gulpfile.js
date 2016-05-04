@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var newer = require('gulp-newer');
+var ngannotate = require('gulp-ng-annotate');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('default', ['js_libs', 'js_app', 'sass'], function(){
@@ -20,12 +21,16 @@ gulp.task('js_libs', function(){
             'assets/js/libs/angular-route/angular-route.js',
         ])
         .pipe(concat('vendors.js'))
+        .pipe(ngannotate())
+        .pipe(uglify())
         .pipe(gulp.dest('assets/js/dist'))
 });
 
 gulp.task('js_app', function(){
     return gulp.src(['assets/js/app/config.js', 'assets/js/app/services/*.js', 'assets/js/app/controllers/*.js'])
         .pipe(concat('app.js'))
+        .pipe(ngannotate())
+        .pipe(uglify())
         .pipe(gulp.dest('assets/js/dist'))
 });
 
